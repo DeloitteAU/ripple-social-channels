@@ -1,8 +1,15 @@
 {
-  "name": "@deloitte-drupal-au/ripple-social-channels",
+  "name": "@dpc-sdp/ripple-social-providers",
+  "description": "A static providers list for matching URLs of social media channels supported by Ripple.",
   "version": "0.0.1",
   "license": "Apache-2.0",
-  "description": "A static providers list for matching URLs of social media channels supported by the Ripple design system.",
+  "contributors": [
+    {
+      "name": "Deloitte Digital (Australia)",
+      "email": "drupal@deloitte.com.au",
+      "url": "https://deloittedigital.com.au"
+    }
+  ],
   "main": "providers.json",
   "files": [
     "providers.*"
@@ -12,10 +19,6 @@
     "build": "node ./build.js providers/*.yml > providers.json",
     "prepare": "npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/iamcal/oembed.git"
-  },
   "keywords": [
     "social",
     "channels",
@@ -23,9 +26,6 @@
     "providers",
     "list"
   ],
-  "bugs": {
-    "url": "https://github.com/iamcal/oembed/issues"
-  },
   "devDependencies": {
     "js-yaml": "^4.1.0"
   }
